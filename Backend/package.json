@@ -1,0 +1,31 @@
+{
+  "name": "hrms",
+  "version": "1.0.0",
+  "description": "Human Resource Management System",
+  "license": "ISC",
+  "author": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=local node babel_hook.js",
+    "start:dev": "NODE_ENV=dev nodemon babel_hook.js",
+    "start:demo": "NODE_ENV=demo node babel_hook.js",
+    "start:prod": "NODE_ENV=production node babel_hook.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.29.7",
+    "@babel/core": "^7.29.7",
+    "@babel/plugin-transform-runtime": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "@babel/register": "^7.29.7",
+    "cross-env": "^10.1.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.29.7",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.0",
+    "express": "^5.2.1",
+    "http": "^0.0.1-security",
+    "mongoose": "^9.10.1"
+  }
+}
